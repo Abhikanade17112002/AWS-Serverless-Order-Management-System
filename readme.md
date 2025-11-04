@@ -7,7 +7,7 @@ This system accepts user orders from a static website, queues them for processin
 
 ## 🚀 Architecture Overview
 
-![Architecture Diagram](https://github.com/Abhikanade17112002/AWS-Serverless-Order-Management-System/blob/master/screenshots/architecturediagram.png?raw=true)
+![Architecture Diagram](https://github.com/Abhikanade17112002/AWS-Serverless-Order-Management-System/blob/master/screenshots/architecturediagrame.png)
 
 
 ### Flow:
@@ -48,7 +48,7 @@ This system accepts user orders from a static website, queues them for processin
 *Lambda function that receives orders from API Gateway*
 
 ### 4. Lambda Function - Process Order
-![Process Order Lambda](./screenshots/04-lambda-process-order.png)
+![Process Order Lambda](https://github.com/Abhikanade17112002/AWS-Serverless-Order-Management-System/blob/master/screenshots/Process%20Order%20Lambda.png)
 *Lambda function that processes orders from SQS*
 
 ### 5. SQS Queue Configuration
