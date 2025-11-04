@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Place Order</title></head>
+<body style="font-family:sans-serif;text-align:center;margin-top:100px">
+  <h2>Order Form</h2>
+  <input id="product" placeholder="Product name"><br><br>
+  <input id="qty" type="number" placeholder="Quantity"><br><br>
+  <button onclick="submitOrder()">Submit</button>
+  <p id="msg"></p>
+
+<script>
+const apiUrl = 'https://0898u40a3g.execute-api.us-east-1.amazonaws.com/prod/submit';
+async function submitOrder(){
+  const msg = document.getElementById('msg');
+  msg.textContent = 'Submitting...';
+  const body = { productName: document.getElementById('product').value,
+                 quantity: document.getElementById('qty').value };
+  const res = await fetch(apiUrl, {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(body)
+  });
+  const data = await res.json();
+  msg.textContent = res.ok ? 'Success: '+data.orderId : 'Error: '+data.error;
+}
+</script>
+</body>
+</html>
+
