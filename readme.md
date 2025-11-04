@@ -7,7 +7,8 @@ This system accepts user orders from a static website, queues them for processin
 
 ## 🚀 Architecture Overview
 
-![Architecture Diagram](./screenshots/architecture-diagram.png)
+![Architecture Diagram](https://github.com/Abhikanade17112002/AWS-Serverless-Order-Management-System/blob/master/screenshots/architecturediagram.png?raw=true)
+
 
 ### Flow:
 
@@ -35,15 +36,15 @@ This system accepts user orders from a static website, queues them for processin
 ## 📸 AWS Console Screenshots
 
 ### 1. S3 Bucket Configuration
-![S3 Bucket Setup](./screenshots/01-s3-bucket-config.png)
+![S3 Bucket Setup](https://github.com/Abhikanade17112002/AWS-Serverless-Order-Management-System/blob/master/screenshots/S3Bucket.png)
 *Static website hosting enabled for the frontend*
 
 ### 2. API Gateway Configuration
-![API Gateway](./screenshots/02-api-gateway-setup.png)
+![API Gateway](https://github.com/Abhikanade17112002/AWS-Serverless-Order-Management-System/blob/master/screenshots/APIGateway.png)
 *REST API endpoints configured for order submission*
 
 ### 3. Lambda Function - Submit Order
-![Submit Order Lambda](./screenshots/03-lambda-submit-order.png)
+![Submit Order Lambda](https://github.com/Abhikanade17112002/AWS-Serverless-Order-Management-System/blob/master/screenshots/Submission%20Lambda.png)
 *Lambda function that receives orders from API Gateway*
 
 ### 4. Lambda Function - Process Order
@@ -51,20 +52,16 @@ This system accepts user orders from a static website, queues them for processin
 *Lambda function that processes orders from SQS*
 
 ### 5. SQS Queue Configuration
-![SQS Queue](./screenshots/05-sqs-queue-config.png)
+![SQS Queue](https://github.com/Abhikanade17112002/AWS-Serverless-Order-Management-System/blob/master/screenshots/Order%20Processing%20Qeueue.png)
 *Message queue for asynchronous order processing*
 
 ### 6. DynamoDB Table Structure
-![DynamoDB Table](./screenshots/06-dynamodb-table.png)
+![DynamoDB Table](https://github.com/Abhikanade17112002/AWS-Serverless-Order-Management-System/blob/master/screenshots/Order%20Table.png)
 *Orders table with partition key and attributes*
 
 ### 7. Working Application Demo
-![Application Demo](./screenshots/07-application-demo.png)
+![Application Demo](https://github.com/Abhikanade17112002/AWS-Serverless-Order-Management-System/blob/master/screenshots/Home%20Page.png)
 *Frontend interface for order submission*
-
-### 8. DynamoDB Records (Optional)
-![DynamoDB Records](./screenshots/08-dynamodb-records.png)
-*Sample order records stored in the database*
 
 ---
 
