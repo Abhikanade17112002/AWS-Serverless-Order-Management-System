@@ -7,7 +7,8 @@ This system accepts user orders from a static website, queues them for processin
 
 ## 🚀 Architecture Overview
 
-![Architecture Diagram](https://github.com/Abhikanade17112002/AWS-Serverless-Order-Management-System/blob/master/screenshots/architecturediagrame.png)
+![Architecture Diagram](https://github.com/Abhikanade17112002/AWS-Serverless-Order-Management-System/blob/master/screenshots/architecturediagram.png?raw=true)
+
 
 
 ### Flow:
